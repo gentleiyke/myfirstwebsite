@@ -29,62 +29,10 @@ fetch(`https://api.github.com/users/gentleiyke/repos?per_page=5`)
     // Append the repository list to the container
     classRepos.appendChild(listRepos);
     
-    // pgCount =   0;
-    // getRepos.forEach(repo => {
-    //     pgCount++
-    // });
-
-    // console.log('Count:', pgCount);
-
-    // // Pagination
-    // const paginationContainer = pgCount;
-    // paginationContainer.innerHTML = ''; // Clear previous controls
-
-    // const previousButton = document.createElement('button');
-    // previousButton.textContent = 'Previous';
-    // previousButton.addEventListener('click', () => {
-    //   if (currentPage > 1) {
-    //     currentPage--;
-    //     classRepos.appendChild(listRepos);
-    //   }
-    // });
-    // const nextButton = document.createElement('button');
-    // nextButton.textContent = 'Next';
-    // nextButton.addEventListener('click', () => {
-    //   currentPage++;
-    //   classRepos.appendChild(listRepos);
-    // });
-    
-    // paginationContainer.appendChild(previousButton);
-    // paginationContainer.appendChild(nextButton);
-    
   })
   .catch(error => {
     console.error('Error fetching repositories:', error);
   });
 
-//   pgRepos();
-//   function pgRepos() {
-//     const paginationContainer = document.getElementById('upcoming-api');
-//     paginationContainer.innerHTML = ''; // Clear previous controls
-  
-//     const previousButton = document.createElement('button');
-//     previousButton.textContent = 'Previous';
-//     previousButton.addEventListener('click', () => {
-//       if (currentPage > 1) {
-//         currentPage--;
-//         fetchRepos();
-//       }
-//     });
-  
-//     const nextButton = document.createElement('button');
-//     nextButton.textContent = 'Next';
-//     nextButton.addEventListener('click', () => {
-//       currentPage++;
-//       fetchRepos();
-//     });
-  
-//     paginationContainer.appendChild(previousButton);
-//     paginationContainer.appendChild(nextButton);
-//   }
+
 
