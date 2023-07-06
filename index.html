@@ -15,20 +15,20 @@
     <!-- Header Start -->
     <section class="container-fluid row">
         <header class="d-flex py-3 navbar navbar-expand-lg">
-            <div class="me-auto p-2 logo navbar-brand">
+            <div class="me-auto p-2 logo navbar-brand col-lg-6">
                 <img src="pass.jpg" alt="Ikemefula Oriaku">
                 <h3>Ikemefula Oriaku</h3>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="nav flex-row-reverse p-2 collapse navbar-collapse" id="navbarSupportedContent">
+            <nav class="nav flex-row-reverse p-2 collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                      <li class="nav-item">
-                        <a href="" class="nav-link">My Resume</a>
+                        <a href="#cv" class="nav-link">My Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">My Projects</a>
+                        <a href="#project" class="nav-link">My Projects</a>
                     </li>
                        <li class="nav-item">
                         <a href="#certification-and-training" class="nav-link">My Certifications</a>
@@ -37,7 +37,7 @@
                         <a href="#certification-and-training" class="nav-link">My Trainings</a>
                     </li>
                     <li class="nav-item">
-                         <a href="" class="nav-link">Talk to Me</a>
+                         <a href="#talk" class="nav-link">Talk to Me</a>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +45,7 @@
     </section>
     <!-- Header End -->
     <!-- Jumbo Start -->
-    <section class="row mt-0">
+    <section class="row mt-0 col-lg-12 col-md-12">
         <!-- Carousel -->
         <div class="carousel slide" data-bs-ride="carousel" id="slide01">
             <!-- Carousel Indicator-->
@@ -60,21 +60,21 @@
                   <img src="php.jpg" alt="PHP Scripting" class="d-block w-100">
                   <div class="carousel-caption d-none d-md-block text-center">
                     <h1>Offline and Online PHP Projects</h1>
-                    <p>...</p>
+                    <p>Online and Offline PHP projects implementation and modification</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="codeing.jpg" alt="Codes" class="d-block w-100">
                   <div class="carousel-caption d-none d-md-block text-center">
                     <h1>Javascript Projects</h1>
-                    <p>...</p>
+                    <p>Javascript framework collaboration, designs and deployment</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="html.png" alt="Front-end" class="d-block w-100">
                   <div class="carousel-caption d-none d-md-block text-center">
                     <h1>Front-end Development</h1>
-                    <p>...</p>
+                    <p>Web designing using HTML, CSS and Javascript frameworks</p>
                   </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
         </div>
     </section>
     <!-- Jumbo End -->
-    <section class="container-fluid mt-5">
+    <section class="container-fluid mt-5" id="cv">
         <div id="accordion" class="row">
             <div class="col-md-4 col-lg-4">
                 <ul class="list-group">
@@ -100,9 +100,14 @@
                 </ul> 
                 
             </div>
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-7 col-lg-7">
                 <div id="personal" class="collapse show" data-bs-parent="#accordion">
-                    I am an energetic, highly motivated, compassionate and IT-skilled biomedical scientist & healthcare manager with ten years of experience in the healthcare sector. I am a medic turned web dev with strong knowledge of Microsoft Office 365, MySQL, HTML, CSS, JS & its frameworks and PHP and basic knowledge of JAVA. I am an active learner & open to collaborations & remote jobs in the IT sector. I have other certifications in healthcare & business.
+                    <p>
+                        I am an energetic, highly motivated, compassionate and IT-skilled biomedical scientist & healthcare manager with ten years of experience in the healthcare sector. I am a medic turned web dev with strong knowledge of Microsoft Office 365, MySQL, HTML, CSS, JS & its frameworks and PHP and basic knowledge of JAVA. I am an active learner & open to collaborations & remote jobs in the IT sector. I have other certifications in healthcare & business.
+                    </p>
+                    <p>
+                        I am dedicated to self-improvement in web and mobile development & looking to get an entry-level entry into the web dev space. I am adaptive, a quick learner, & have a basic knowledge of version control systems. I am open to gaining work experience & building my portfolio through paid or unpaid internships & volunteering with any tech company willing to take their chance with me.
+                    </p>
                 </div>
                 <div id="work" class="collapse" data-bs-parent="#accordion">
                     <h3>Web Designer, Freelance/Self</h3>
@@ -154,7 +159,7 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid row">
+    <section class="container-fluid row" id="project">
         <div class="col-md-6 col-lg-8 px-4 gx-5 gy-5">
             <div class="card">
                 <div class="card-header">My Project List</div>
@@ -171,11 +176,14 @@
                 <li class="list-group-item">Data Analyst <sup>in progress</sup></li>
                 <li class="list-group-item">Mobile Development <sup>not started</sup></li>
             </ul>
+            <div class="card mb-2 mt-5">
+                <div class="card-header" id="talk">Talk to me: <h5><a href="">ike@ikemefulaoriaku.space</a></h5></div>
+            </div>
         </div>
     </section>
     <footer class="container-fluid">
-        <div class="d-flex">
-            <div class="me-auto p-2">
+        <div>
+            <div class="me-auto p-2 col-lg-6 col-md-6 col-sm-12">
                 <p>
                     Copyright &copy;
                     <script>
@@ -184,13 +192,12 @@
                     Ikemefula Oriaku
                 </p>
             </div>
-            <div class="p-2">
-                <ul class="d-flex">
-                    <li class="p-2">My Resume</li>
-                    <li class="p-2">My Projects</li>
-                    <li class="p-2">My Certifications</li>
-                    <li class="p-2">My Trainings</li>
-                    <li class="p-2">Talk to Me</li>
+            <div class="p-2 col-lg-6 col-md-6 col-sm-12">
+                <ul class="d-flex flex-row-reverse">
+                    <li class="p-2"><a href="#cv">Resume</a></li>
+                    <li class="p-2"><a href="#project">Projects</a></li>
+                    <li class="p-2"><a href="#certification-and-training">Trainings</a></li>
+                    <li class="p-2"><a href="#talk">Contact</a></li>
                 </ul>
             </div>
         </div>
